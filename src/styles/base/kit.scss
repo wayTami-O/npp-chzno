@@ -1,0 +1,131 @@
+$bg-primary: #FFFFFF;
+$bg-inverse: #000000;
+$bg-accent: #FFFFFF;
+
+
+$bg-primary-transparent-5: color-mix(in srgb, $bg-primary 100%, $bg-inverse 5%);
+$bg-primary-transparent-10: color-mix(in srgb, $bg-primary 100%, $bg-inverse 10%);
+$bg-primary-transparent-20: rgba(0, 0, 0, .2);
+$bg-primary-transparent-40: rgba(255, 255, 255, .4);
+
+$bg-inverse-transparent-5: color-mix(in srgb, $bg-primary 100%, $bg-inverse 5%);
+$bg-inverse-transparent-10: color-mix(in srgb, $bg-primary 100%, $bg-inverse 10%);
+$bg-inverse-transparent-20: color-mix(in srgb, $bg-primary  100%, $bg-inverse 20%);
+$bg-inverse-transparent-40: color-mix(in srgb, $bg-primary  100%, $bg-inverse 40%);
+
+$bg-accent-transparent-10: color-mix(in srgb, $bg-accent 100%, $bg-primary 90%);
+$bg-accent-transparent-20: color-mix(in srgb, $bg-accent 100%, $bg-primary 80%);
+$bg-accent-transparent-40-disabled: color-mix(in srgb, $bg-accent 100%, $bg-primary 60%);
+
+$bg-terteriary-strong-wrong: #FFFFFF;
+
+
+
+$text-primary: #000000;
+$text-inverse: #FFFFFF;
+$text-accent: #000000;
+
+$text-primary-transparent-20: color-mix(in srgb, $bg-inverse 100%, $bg-primary 80%);
+$text-primary-transparent-40: color-mix(in srgb, $bg-inverse 100%, $bg-primary 60%);
+
+$text-accent-transparent-40: color-mix(in srgb, $bg-accent 100%, $bg-primary 60%);
+
+$text-terteriary-strong-wrong: #ED3900;
+
+
+
+$icon-primary: #000000;
+$icon-accent: #FFFFFF;
+
+$icon-primary-transparent-20: color-mix(in srgb, $bg-inverse 100%, $bg-primary 80%);
+$icon-primary-transparent-40: color-mix(in srgb, $bg-inverse 100%, $bg-primary 60%);
+
+$icon-terteriary-strong-wrong: #000000;
+
+
+
+$border-primary: #FFFFFF;
+$border-accent: #000000;
+
+$border-primary-transparent-10: color-mix(in srgb, $bg-primary 100%, $bg-inverse 10%);
+$border-primary-transparent-20: color-mix(in srgb, $bg-primary 100%, $bg-inverse 20%);
+$border-primary-transparent-40: color-mix(in srgb, $bg-primary 100%, $bg-inverse 40%);
+
+$border-terteriary-strong-wrong: #FFFFFF;
+
+@mixin heading_1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    @include mobile {
+        font-size: 3rem;
+    }
+}
+@mixin heading_2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    @include mobile {
+        font-size: 2rem;
+    }
+}
+@mixin heading_3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: -0.03em;
+    @include mobile {
+        font-size: 1.5rem;
+    }
+}
+@mixin text_1{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+}
+@mixin text_2{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+}
+@mixin button_1{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+}
+@mixin button_2{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+}
+@mixin description{
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+}
+
+.mt-8 {
+    margin-top: 8rem;
+}
+.mt-6 {
+    margin-top: 6rem;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-1 {
+    margin-top: 1rem;
+}

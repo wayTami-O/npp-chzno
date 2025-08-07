@@ -1,0 +1,11 @@
+header {
+    position: sticky;
+    z-index: 47;
+    top: -1px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    width: 100%;
+    &_sticky-hidden {
+        transform: translateY(-100%);
+    }
+}
