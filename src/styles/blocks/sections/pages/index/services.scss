@@ -1,0 +1,23 @@
+.services {
+    margin-top: 5rem;
+    @include df_fdc;
+    gap: 2.5rem;
+    &__header {
+        padding-inline: 3.313rem;
+        @include df_ac;
+        justify-content: space-between;
+        span {
+            width: 32.625rem;
+            font-size: 2.5rem;
+            color: $dark;
+            font-weight: 400;
+        }
+        .strong {
+            font-weight: 600;
+            color: $blue;
+        }
+    }
+    &__content {
+        
+    }
+}

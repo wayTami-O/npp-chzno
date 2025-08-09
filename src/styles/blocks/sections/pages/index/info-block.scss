@@ -22,6 +22,37 @@
         .item {
             background-color: #F5F7F8;
             border-radius: 1.875rem;
+            padding: 2.813rem 2.313rem;
+            position: relative;
+            overflow: hidden;
+            height: 27.5rem;
+            &__big-text {
+                @include df_fdc;
+                gap: 3.875rem;
+                &__small-text {
+                    font-size: 1rem;
+                    color: $dark;
+
+                }
+            }
+            &__text-content {
+                @include df_fdc;
+                gap: 2.375rem;
+                .title {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: $dark;
+                }
+                .desc {
+                    font-size: 1.5rem;
+                    color: $dark;
+                }
+            }
+            img {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
         }
     }
 }

@@ -1,0 +1,93 @@
+.form-detail {
+    margin-top: 5rem;
+    width: 100%;
+    background-color: $blue;
+    border-radius: 2rem;
+    padding: 2.125rem 3.125rem 3.75rem;
+    display: flex;
+    gap: 3.563rem;
+    .form {
+        max-width: 39.813rem;
+        @include df_fdc;
+        gap: 2.5rem;
+        .title {
+            color: #FFFFFF;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        &__cont {
+            @include df_fdc;
+            gap: 1.688rem;
+        }
+        &__inputs {
+            @include grid(3, 1.875rem);
+            .cont-input {
+                // @include df_fdc;
+                // gap: 0.375rem;
+                &__label {
+                    @include df_fdc;
+                    gap: 0.375rem;
+                    font-size: 1rem;
+                    color: #FFFFFF;
+                }
+                input {
+                    padding: 0.813rem;
+                    font-size: 1rem;
+                    color: $dark;
+                    border-radius: 0.375rem;
+                    border: 0.063rem solid #0000004D;
+                }
+            }
+            .comment {
+                grid-column: span 2;
+            }
+        }
+        &__checkboxs {
+            @include df_fdc;
+            gap: 1.25rem;
+        }
+        &__checkbox-item {
+            display: flex;
+            gap: 1.625rem;
+            .checkbox {
+                min-width: 1.125rem;
+                min-height: 1.125rem;
+                max-width: 1.125rem;
+                max-height: 1.125rem;
+                border: 0.063rem solid #fff;
+                border-radius: 0.125rem;
+            }
+            .text {
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .info {
+        @include df_fdc;
+        gap: 4.813rem;
+        img {
+            margin-top: 1.688rem;
+            width: 32.25rem;
+        }
+        &__text {
+            @include df_fdc;
+            gap: 1.5rem;
+            .text {
+                font-size: 1.5rem;
+                color: #fff;
+                width: 30.188rem;
+            }
+            .button {
+                @include df_ac_jcc;
+                width: 9.25rem;
+                height: 3rem;
+                border-radius: 0.375rem;
+                background-color: $orange;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+    }
+}
