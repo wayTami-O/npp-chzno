@@ -1,11 +1,83 @@
 header {
-    position: sticky;
-    z-index: 47;
-    top: -1px;
-    transform: translateY(0);
-    transition: transform 0.3s ease;
-    width: 100%;
-    &_sticky-hidden {
-        transform: translateY(-100%);
+    @include df_ac;
+    max-width: 86.25rem;
+    margin-inline: auto;
+    margin-top: 0.625rem;
+    .logo {
+        width: 8.625rem;
+        height: 4.563rem;
+        margin-right: 4.5rem;
+        cursor: pointer;
+    }
+    nav {
+        margin-right: 5.188rem;
+        ul {
+            @include df_ac;
+            gap: 1.125rem;
+            li {
+                @include manr;
+                @include df_ac;
+                gap: .5rem;
+                font-size: 1rem;
+                font-weight: 400;
+                color: $dark;
+                cursor: pointer;
+                svg {
+                    width: 0.938rem;
+                    height: 0.938rem;
+                }
+            }
+            .active {
+                font-weight: 600;
+                color: $blue;
+            }
+            hr {
+                height: 1.5rem;
+                width: 0.063rem;
+                border: none;
+                outline: none;
+                background-color: $gray;
+            }
+        }
+    }
+    .number-container {
+        @include df_ac;
+        gap: 0.313rem;
+        .img-phone {
+            @include df_ac_jcc;
+            width: 1.75rem;
+            height: 1.75rem;
+            background-color: $orange;
+            border-radius: 0.375rem;
+            svg {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+        }
+        .phone-number {
+            @include manr;
+            font-weight: 600;
+            font-size: 1rem;
+            color: $dark;
+        }
+    }
+    .header-button {
+        @include df_ac_jcc;
+        margin-left: auto;
+        width: 13.125rem;
+        height: 3rem;
+        border-radius: 0.375rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem ;
+    }
+}
+
+.orange-button {
+    background-color: $orange;
+    transition: all .3s ease-out;
+    &:hover {
+        transition: all .3s ease-out;
+        background-color: $blue;
     }
 }
